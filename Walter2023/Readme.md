@@ -1,5 +1,25 @@
 # FLASK
 
+## Que se puede hacer con flask?
+
+1. Crear una API RESTful: Flask permite crear una API RESTful para que otras aplicaciones puedan interactuar con nuestra aplicación y obtener información de ella.
+
+2. Crear una aplicación web: Flask permite crear una aplicación web para que los usuarios puedan interactuar con nuestra aplicación a través de un navegador web.
+
+3. Manejar bases de datos: Flask se integra fácilmente con bases de datos relacionales y no relacionales como SQLite, MySQL, PostgreSQL, MongoDB, entre otras.
+
+4. Crear formularios: Flask facilita la creación y validación de formularios web para que los usuarios puedan enviar información a nuestra aplicación.
+
+5. Trabajar con autenticación y autorización: Flask cuenta con herramientas para implementar la autenticación y autorización en nuestra aplicación, lo que permite restringir el acceso a ciertas partes de nuestra aplicación.
+
+6. Implementar el patrón MVC: Flask permite seguir el patrón de diseño Modelo-Vista-Controlador para organizar el código de nuestra aplicación.
+
+7. Crear páginas estáticas y dinámicas: Flask permite crear páginas web estáticas y dinámicas, lo que permite mostrar información en tiempo real en nuestra aplicación.
+
+8. Crear pruebas unitarias: Flask cuenta con herramientas para realizar pruebas unitarias en nuestra aplicación y asegurarnos de que funcione correctamente.
+
+En resumen, Flask es una herramienta muy útil para el desarrollo de aplicaciones web en Python, ya que ofrece una gran flexibilidad y facilidad de uso. Con Flask se pueden crear desde aplicaciones web simples hasta aplicaciones más complejas con múltiples funcionalidades.
+
 ## ` mysql.connection.cursor() ` en **Flask-mysqldb**
 
 En Flask, `mysql.connection.cursor()` se utiliza para crear un objeto cursor que permite ejecutar consultas en la base de datos MySQL. Este objeto se utiliza para enviar comandos SQL a la base de datos y obtener los resultados.
