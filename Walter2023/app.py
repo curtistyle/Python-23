@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, flash
+from flask import Flask, request, render_template
 from conexion import (conect_to_db, 
                       db_params,
                       get_all_persons,
