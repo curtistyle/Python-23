@@ -48,7 +48,7 @@ Es importante recordar cerrar el objeto cursor después de utilizarlo, utilizand
 cursor.close()
 ```
 
-## execute() en **Flask-mysqldb**
+## Metodo `execute()` en **Flask-mysqldb**
 
 `execute()` es un método de Flask utilizado para ejecutar consultas SQL en una base de datos. Este método se utiliza en conjunto con un **objeto cursor**, que se crea a partir de una conexión a una base de datos, como por ejemplo la conexión a una base de datos MySQL.
 
