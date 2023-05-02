@@ -1,8 +1,53 @@
-<div>
-    <form action="/insert_person">
-        <input type="text" name="name" id="" placeholder="Name"><br>
-        <input type="text" name="last_name" id="" placeholder="Last Name"><br><br>
-        <input type="text" name="email" id="" placeholder="Email">
-        <button type="submit">Save</button>
-    </form>
+{% extends 'layout.html' %}
+{% block body %}
+
+<div class="d-flex align-items-center flex-column justify-content-center">
+    <div class="card-body box bg-dark d-flex justify-content-center p-4">  
+        <form action="/insert_person">
+            <div class="d-flex justify-content-center align-items-center">
+                <h1><b>Set</b> person in <b>DB</b></h1>    
+            </div>
+            <div>
+                <label for="">Nombre</label>
+                <input class="m-2" type="text" name="name" id="" placeholder="Name">
+            </div>
+            <div>
+                <label for="">Apellido</label>
+                <input class="m-2" type="text" name="last_name" id="" placeholder="Last Name">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="">Email</label>
+                <input class="m-2" type="text" name="email" id="" placeholder="Email">
+            </div>
+            <div class="m-3 d-flex justify-content-center">
+                <button type="submit" class="btn btn-outline-success">Success</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-7 m-4 d-flex justify-content-center align-items-center">
+        
+        <table class="table table-striped table-bordered table-sm">
+            <caption class="text-primary">View all persons</caption>
+            <thead>
+                <td>ID</td>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Email</td>
+            </thead>
+            <tbody>
+                {% for person in persons %}
+                <tr>
+                    <td>{{ person.0 }}</td> <!-- ID -->
+                    <td>{{ person.1 }}</td> <!-- Nombre -->
+                    <td>{{ person.2 }}</td> <!-- Apellido -->
+                    <td>{{ person.3 }}</td> <!-- Email -->
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <form class="m-2" action="/view_persons" method="GET"><button type="button" class="btn btn-outline-secondary">Refresh</button></form>
 </div>
+
+{% endblock %}

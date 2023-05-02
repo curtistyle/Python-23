@@ -42,9 +42,14 @@ def get_all_persons():
         datos['nombre'] = persona[1]
         datos['apellido'] = persona[2]
         datos['email'] = persona[3]
-        respuesta.append(datos)
-    
+        respuesta.append(datos) 
     return respuesta
+
+def view_persons():
+    connection, con = get_db(db_params)
+    connection.execute("select * from persona")
+    data = connection.fetchall()
+    return data
 
 
 def get_by_id(id):

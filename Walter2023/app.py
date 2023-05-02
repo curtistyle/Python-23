@@ -6,7 +6,8 @@ from conexion import (conect_to_db,
                       delete_by_id,
                       update_person_email,
                       get_person_deptos,
-                      insert_person
+                      insert_person,
+                      view_persons
                      )
 
 ## servidor-23\Scripts\activate.bat
@@ -25,6 +26,12 @@ def index():
 def conect():
     conect_to_db(db_params)
     return 'Connected to the database'
+
+@app.route('/view_persons')
+def view():
+    response = view_persons()
+    return render_template('index.html', persons=response)
+
 
 @app.route('/all_persons')
 def all_persons():
