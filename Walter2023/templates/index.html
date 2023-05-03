@@ -7,11 +7,11 @@
             <div class="d-flex justify-content-center align-items-center">
                 <h1><b>Set</b> person in <b>DB</b></h1>    
             </div>
-            <div>
+            <div class="d-flex justify-content-between align-items-center">
                 <label for="">Nombre</label>
                 <input class="m-2" type="text" name="name" id="" placeholder="Name">
             </div>
-            <div>
+            <div class="d-flex justify-content-between align-items-center">
                 <label for="">Apellido</label>
                 <input class="m-2" type="text" name="last_name" id="" placeholder="Last Name">
             </div>
@@ -47,7 +47,7 @@
             </tbody>
         </table>
     </div>
-    <form class="m-2" action="/view_persons" method="GET"><button type="button" class="btn btn-outline-secondary">Refresh</button></form>
+    <form class="m-2" action="/view_persons" method="GET"><button type="submit" class="btn btn-outline-secondary">Refresh</button></form>
 </div>
 
 {% endblock %}

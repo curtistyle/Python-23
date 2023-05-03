@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, flash, redirect, url_for
 from conexion import (conect_to_db, 
                       db_params,
                       get_all_persons,
@@ -18,9 +18,11 @@ from conexion import (conect_to_db,
 app = Flask('Api Test')
 
 app.secretkey = 'secretkey'
+
 @app.route('/', methods=['GET', 'POST', 'PUT'])
-def index():
-    return render_template('index.html')
+def Index():
+    response = view_persons()
+    return render_template('index.html', persons=response)
 
 @app.route('/conect')
 def conect():
@@ -58,8 +60,9 @@ def insert_person_route():
         email = request.args['email']
     else:
         email = None
-    response = insert_person(name, last_name, email)
-    return f'new person add to database with id {str(response)}'
+    insert_person(name, last_name, email)
+    
+    return redirect(url_for('Index'))
 
 @app.route('/delete_person_by_id')
 def delete_person_by_id():
