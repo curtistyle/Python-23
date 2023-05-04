@@ -32,7 +32,8 @@ def conect():
 @app.route('/view_persons')
 def view():
     response = view_persons()
-    return render_template('index.html', persons=response)
+    return render_template('all_persons.html', persons=response)
+
 
 
 @app.route('/all_persons')
