@@ -61,8 +61,13 @@ def get_by_id(id):
     datos['nombre'] = persona[1]
     datos['apellido'] = persona[2]
     datos['email'] = persona[3]
-
     return datos
+
+def get_for_id(id):
+    connection, con = get_db(db_params)
+    connection.execute(f"select * from persona where id = {id}")
+    persona = connection.fetchall()
+    return persona
 
 def get_person_deptos(id):
     connection, con = get_db(db_params)

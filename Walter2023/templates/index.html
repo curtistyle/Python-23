@@ -6,14 +6,23 @@
         <h1 class=" text-black-50 display-1">Bienvenidos</h1>
     </div>
     <div class="container p-4 bg-dark d-flex rounded-bottom mt-1">
-        <div class="container p-4 bg-body d-flex justify-content-evenly rounded-5">      
-            <button type="button" class="btn btn-outline-primary"><b>Actualizar</b> Persona</button>
-            <button type="button" class="btn btn-outline-success"><b>Insertar</b> Persona</button>
-            <button type="button" class="btn btn-outline-info"><b>Mostrar</b> Personas</button>
-            <button type="button" class="btn btn-outline-warning"><b>Eliminar</b> Persona</button>
-            <button type="button" class="btn btn-outline-light"><b>Buscar</b> por...</button>
+        <div class="container p-4 bg-body d-flex justify-content-evenly rounded-5">
+            <a href="/set_person_in_db">
+                <button type="button" class="btn btn-outline-success"><b>Insertar</b> Persona</button>
+            </a>   
+            <a href="/update_person">
+                <button type="submit" class="btn btn-outline-primary"><b>Actualizar</b> Persona</button>
+            </a>   
+            <a href="/list_of_persons">
+                <button  type="button" class="btn btn-outline-info"><b>Mostrar</b> Personas</button>
+            </a>
+            <form action="">
+                <button type="button" class="btn btn-outline-warning"><b>Eliminar</b> Persona</button>
+            </form>
+            <form action="">
+                <button type="button" class="btn btn-outline-light"><b>Buscar</b> por...</button>
+            </form>
         </div>
     </div>
 </div>
-
 {% endblock %}

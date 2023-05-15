@@ -1,27 +1,27 @@
-{% extends 'layout.html' %}
-{% block body %}
+{% extends 'update_person.html' %}
 
+{% block formbody %}
 <div class="card-body box bg-dark d-flex justify-content-center p-4">  
-    <form action="/insert_person">
+    <form action="/form_update_person/{{person.0}}" method="GET">
         <div class="d-flex justify-content-center align-items-center">
             <h1><b>Set</b> person in <b>DB</b></h1>    
         </div>
         <div class="d-flex justify-content-between align-items-center">
             <label for="">Nombre</label>
-            <input class="m-2" type="text" name="name" id="" placeholder="Name">
+            <input class="m-2" type="text" name="name" id="" placeholder="Name" value="{{ person.1 }}"">
         </div>
         <div class="d-flex justify-content-between align-items-center">
             <label for="">Apellido</label>
-            <input class="m-2" type="text" name="last_name" id="" placeholder="Last Name">
+            <input class="m-2" type="text" name="last_name" id="" placeholder="Last Name" value="{{ person.2 }}">
         </div>
         <div class="d-flex justify-content-between align-items-center">
             <label for="">Email</label>
-            <input class="m-2" type="text" name="email" id="" placeholder="Email">
+            <input class="m-2" type="text" name="email" id="" placeholder="Email" value="{{ person.3 }}">
         </div>
-        <div class="m-3 d-flex justify-content-center">
+        <div class="m-3 d-flex justify-content-center justify-content-around">
             <button type="submit" class="btn btn-outline-success">Success</button>
+            <a href="/"><button type="button" class="btn btn-outline-warning">Home</button></a>   
         </div>
     </form>
 </div>
-
 {% endblock %}
