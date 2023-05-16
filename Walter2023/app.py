@@ -40,11 +40,14 @@ def view_list():
 def view_form():
     return render_template('set_person_in_db.html')
 
-@app.route('/update_person')
+@app.route('/update_person', methods=['GET','POST'])
 def view_update():
-    response = view_persons()
-    return render_template('update_person.html', persons=response)
-
+    if request.method == 'GET':
+        response = view_persons()
+        return render_template('update_person.html', persons=response)
+    else:
+        if request.form['id'] != None:
+            pass
 #  ? ----------------------------------------------
 
 @app.route('/all_persons')
