@@ -3,12 +3,13 @@ from conexion import (conect_to_db,
                       db_params,
                       get_all_persons,
                       get_by_id,
-                      delete_by_id,
+                      delete_person_by_id,
                       update_person_email,
                       get_person_deptos,
                       insert_person,
                       view_persons,
-                      get_for_id
+                      get_for_id,
+                      update_person
                      )
 
 ## servidor-23\Scripts\activate.bat
@@ -35,19 +36,55 @@ def view_list():
     response = view_persons()
     return render_template('list_of_persons.html', persons=response)
     
+@app.route('/delete_person/', methods=['GET','POST'])
+def delete_person():
+    if request.method == 'GET':
+        response = view_persons()
+        return render_template('delete_person.html', persons=response)
+
+@app.route('/delete/<id>')
+def delete(id): 
+    delete_person_by_id(id)
+    return redirect(url_for('view_list'))
+
+    
+# @app.route('/delete_person_by_id')
+# def delete_person_by_id():
+#     id = request.args['id']
+#     delete_by_id(id) 
+#     return "delete successfuly"
+
+
+
 
 @app.route('/set_person_in_db')
 def view_form():
     return render_template('set_person_in_db.html')
 
-@app.route('/update_person', methods=['GET','POST'])
+@app.route('/update_person', methods=['GET'])
 def view_update():
     if request.method == 'GET':
         response = view_persons()
         return render_template('update_person.html', persons=response)
+  
+  
+
+    
+@app.route('/form_update_person/<id>', methods=['GET','POST'])
+def update_person_by_id(id):
+    if request.method == 'GET':
+        response = get_for_id(id)
+        print(response[0])
+        return render_template('form_update_person.html', person=response[0])
     else:
-        if request.form['id'] != None:
-            pass
+        name = request.form['name']
+        last_name = request.form['last_name']
+        email = request.form['email']
+        update_person(id,name,last_name,email)
+        return redirect(url_for('view_list'))
+        
+
+        
 #  ? ----------------------------------------------
 
 @app.route('/all_persons')
@@ -106,11 +143,11 @@ def insert_person_route():
     
 #     return redirect(url_for('Index'))
 
-@app.route('/delete_person_by_id')
-def delete_person_by_id():
-    id = request.args['id']
-    delete_by_id(id) 
-    return "delete successfuly"
+# @app.route('/delete_person_by_id')
+# def delete_person_by_id():
+#     id = request.args['id']
+#     delete_by_id(id) 
+#     return "delete successfuly"
 
 @app.route('/update_email_person')
 def update_person_email():
@@ -119,13 +156,13 @@ def update_person_email():
     update_person_email(id, email)
     return f'email address updated'       
 
-@app.route('/update_person/<id>', methods=['POST','GET'])
-def update(id):
-    if request.method == 'GET':
-        data = get_for_id(id)
-        print(data)
-        return render_template('form_update_person.html', person=data[0])
-
+# @app.route('/update_person/<id>', methods=['POST','GET'])
+# def update(id):
+#     if request.method == 'GET':
+#         data = get_for_id(id)
+#         print(data)
+#         return render_template('form_update_person.html', person=data[0])
+        
 
     
 

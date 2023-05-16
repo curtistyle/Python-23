@@ -88,10 +88,7 @@ def get_person_deptos(id):
 
     return datos_persona
 
-def delete_by_id(id):
-    connection, con = get_db(db_params)
-    connection.execute(f"delete from persona where id = {id}")
-    con.commit()
+
 
 def insert_person(name, last_name, email):
     connection, con = get_db(db_params)
@@ -105,6 +102,20 @@ def update_person_email(id, email):
     connection.execute(f"update persona set email = '{email}' where id {id}")
     con.commit()
 
+def update_person(id, name, last_name, email):
+    connection, con = get_db(db_params)
+    connection.execute("""UPDATE persona SET name = %s, last_name = %s, email = %s WHERE id = %s""",(name,last_name,email,id))
+    con.commit()
+
+# def delete_by_id(id):
+#     connection, con = get_db(db_params)
+#     connection.execute(f"delete from persona where id = {id}")
+#     con.commit()
+
+def delete_person_by_id(id):
+    connection, con = get_db(db_params)
+    connection.execute(f"delete from persona where id = {id}")
+    con.commit()
 
 # @contextlib.contextmanager
 # def database(params):
