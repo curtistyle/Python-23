@@ -1,0 +1,12 @@
+[
+  { "name": "J. Garcia", "number": 13, "holder": true },
+  { "name": "L. Blondel", "number": 42, "holder": true },
+  { "name": "J. Figal", "number": 4, "holder": true },
+  { "name": "M. Sarachi", "number": 3, "holder": true },
+  { "name": "C. Medina", "number": 36, "holder": true },
+  { "name": "J. Campuzano", "number": 49, "holder": true },
+  { "name": "E. Fernandez", "number": 21, "holder": true },
+  { "name": "E. Zeballos", "number": 7, "holder": true },
+  { "name": "E. Cavani", "number": 10, "holder": true },
+  { "name": "L. Jason", "number": 11, "holder": true }
+]
