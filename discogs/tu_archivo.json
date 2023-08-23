@@ -1,0 +1,798 @@
+{
+  "pagination": {
+    "page": 1,
+    "pages": 20,
+    "per_page": 50,
+    "items": 960,
+    "urls": {
+      "last": "https://api.discogs.com/artists/133707/releases?page=20&per_page=50",
+      "next": "https://api.discogs.com/artists/133707/releases?page=2&per_page=50"
+    }
+  },
+  "releases": [
+    {
+      "id": 889460,
+      "title": "6 Songs",
+      "type": "master",
+      "main_release": 2992568,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/889460",
+      "year": 1986,
+      "thumb": "https://i.discogs.com/KLP0LMfVi2LQmMwZWPi62K2pWaDYpYAxfG16fm3S05g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5OTI1/NjgtMTMxMDgwMTg1/Ny5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 153, "in_collection": 16 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 289591,
+      "title": "I'll Be Waiting / Blackball",
+      "type": "master",
+      "main_release": 455430,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/289591",
+      "year": 1986,
+      "thumb": "https://i.discogs.com/1JxlRG06XvfUVGPq7XTkWxezk0sVsvXw1Tf_-8C1gYQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NTQz/MC0xNjc3OTQyMjA5/LTg2MjMuanBlZw.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 352, "in_collection": 139 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 1306051,
+      "title": "Untitled",
+      "type": "master",
+      "main_release": 11486470,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/1306051",
+      "year": 1988,
+      "thumb": "https://i.discogs.com/U_8ZVlz5dFkfTPqz2f9QXh_-JI9rZH8DOgtEIR3Q5T0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDg2/NDcwLTE1MTcxNzQ4/MTgtMjA5Ni5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 52, "in_collection": 3 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77226,
+      "title": "The Offspring",
+      "type": "master",
+      "main_release": 582384,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77226",
+      "year": 1989,
+      "thumb": "https://i.discogs.com/gbloX3H4FnclfFpxNaizf62EdRrL1p0Cuui0OnAq8Bo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4MjM4/NC0xMjM4MTE4NjY3/LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 1128, "in_collection": 424 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 215785,
+      "title": "Baghdad",
+      "type": "master",
+      "main_release": 603916,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/215785",
+      "year": 1991,
+      "thumb": "https://i.discogs.com/QL8FJOh_EukKHHKO4UVz7r4sr3k4gkS70N_fPXBQ5AY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwMzkx/Ni0xMjM1MDY2NDU2/LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 263, "in_collection": 383 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77211,
+      "title": "Ignition",
+      "type": "master",
+      "main_release": 4892277,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77211",
+      "year": 1992,
+      "thumb": "https://i.discogs.com/tYGaK3-CnlT8qLaCyw5ktjcvsQYJl1hn-ZNqwxhGp8k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4OTIy/NzctMTQ1ODIwMzA0/Ni0zMzEyLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 212, "in_collection": 1761 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77214,
+      "title": "Come Out And Play (Keep 'Em Separated)",
+      "type": "master",
+      "main_release": 2478661,
+      "artist": "Offspring*",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77214",
+      "year": 1994,
+      "thumb": "https://i.discogs.com/Hi57YPfZrOQ4zy1R-6nnUajUOC9LzvN81pt4QJqsZEM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0Nzg2/NjEtMTI4NjI4Mzkx/MS5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 45, "in_collection": 110 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77216,
+      "title": "Self Esteem",
+      "type": "master",
+      "main_release": 544938,
+      "artist": "Offspring*",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77216",
+      "year": 1994,
+      "thumb": "https://i.discogs.com/G_1kZ7paJzMfkFVJvb3a0kHbb0iJJqfAoJ9DX50d5L8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0NDkz/OC0xNDk0MDE4ODk0/LTU5MDQuanBlZw.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 24, "in_collection": 340 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77217,
+      "title": "Smash",
+      "type": "master",
+      "main_release": 12764325,
+      "artist": "Offspring*",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77217",
+      "year": 1994,
+      "thumb": "https://i.discogs.com/WJH02F6jEzBEh1ZXAlQZwDVGKpj0_8e6WXbZFvkmz-A/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzY0/MzI1LTE1NDE1MDEz/NDgtNTEwMi5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 134, "in_collection": 342 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77220,
+      "title": "Gotta Get Away",
+      "type": "master",
+      "main_release": 1724229,
+      "artist": "Offspring*",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77220",
+      "year": 1994,
+      "thumb": "https://i.discogs.com/wK8cQ7-MesUwGelEkBBVSORrJ8aHm7ocG0T6DO5YDKo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MjQy/MjktMTMyMzE1NDQ4/NC5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 23, "in_collection": 299 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 4344950,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Single, Promo",
+      "label": "Epitaph",
+      "title": "Bad Habit",
+      "resource_url": "https://api.discogs.com/releases/4344950",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 1995,
+      "thumb": "https://i.discogs.com/cWjoZvFHiVSmdnTMERP229m4C06iSxpDsPeFUO1RAu0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNDQ5/NTAtMTM2MjM0NDc0/MC0zMTc4LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 67, "in_collection": 6 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 5992471,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Single, Promo",
+      "label": "Epitaph",
+      "title": "Kick Him When He's Down",
+      "resource_url": "https://api.discogs.com/releases/5992471",
+      "role": "Main",
+      "artist": "Offspring*",
+      "year": 1995,
+      "thumb": "https://i.discogs.com/-gz7odi1hbR4EGWtn15hStRCtvkRA9-kY295a1g9NI8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5OTI0/NzEtMTQwODI4Nzky/NC01MDMzLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 55, "in_collection": 11 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 13816944,
+      "status": "Accepted",
+      "type": "release",
+      "format": "Cass, Comp, Promo, Smplr",
+      "label": "Not On Label",
+      "title": "The Offspring",
+      "resource_url": "https://api.discogs.com/releases/13816944",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 1996,
+      "thumb": "https://i.discogs.com/Vpe-OyPEqGdv0sCXlC2axpWDaDVKcaNlOCRXcMlHwmU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODE2/OTQ0LTE1NjE3NzMy/MTItNjU1NC5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 31, "in_collection": 1 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 71685,
+      "title": "Ixnay On The Hombre",
+      "type": "master",
+      "main_release": 402316,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/71685",
+      "year": 1996,
+      "thumb": "https://i.discogs.com/WxH-9BlCTJOrcjJsRPMEV747bxwIDYSsbZ8zTf4x45g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwMjMx/Ni0xNDU4MjAyOTYz/LTEyNjcuanBlZw.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 199, "in_collection": 1925 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77228,
+      "title": "All I Want",
+      "type": "master",
+      "main_release": 1250076,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77228",
+      "year": 1996,
+      "thumb": "https://i.discogs.com/jiRIIrskBv-LVJ4jPN5uV1PmH71f3bVfUky5aQZyMdI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTAw/NzYtMTI5NzE1NzQ1/Mi5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 32, "in_collection": 133 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 641758,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, EP",
+      "label": "Not On Label (The Offspring Self-released)",
+      "title": "Club Me",
+      "resource_url": "https://api.discogs.com/releases/641758",
+      "role": "Main",
+      "artist": "Offspring*",
+      "year": 1997,
+      "thumb": "https://i.discogs.com/PSTs1hkGwHRUnSAcwvz_RVrFjoL8t2MzVCiqIOgtxVQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0MTc1/OC0xNTQ2NDIyOTg1/LTYzNjcuanBlZw.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 134, "in_collection": 96 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 12155059,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Album + CD, Album + Comp",
+      "label": "Bay, Epitaph",
+      "title": "Smash, Ignition ",
+      "resource_url": "https://api.discogs.com/releases/12155059",
+      "role": "Main",
+      "artist": "Offspring*",
+      "year": 1997,
+      "thumb": "",
+      "stats": {
+        "community": { "in_wantlist": 6, "in_collection": 4 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 778475,
+      "title": "The Meaning Of Life",
+      "type": "master",
+      "main_release": 6475670,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/778475",
+      "year": 1997,
+      "thumb": "https://i.discogs.com/6w2dqKn0xaaTrNm9gigggL1OhDMOErKOo1BJQzpvPgo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NzU2/NzAtMTQyMDE1MjU5/Ni03MzYzLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 45, "in_collection": 28 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 306438,
+      "title": "I Choose",
+      "type": "master",
+      "main_release": 860598,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/306438",
+      "year": 1997,
+      "thumb": "https://i.discogs.com/jsprnsDlope58I_0kqXKRIfqIiouQbx6T2Ae0CzuttM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2MDU5/OC0xMTY2MzY3NTky/LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 44, "in_collection": 30 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77238,
+      "title": "Gone Away",
+      "type": "master",
+      "main_release": 382154,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77238",
+      "year": 1997,
+      "thumb": "https://i.discogs.com/2tmZ5QgGA4JyobsVfZmaxu-k3Vwrzjg457HyPXnf97g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MjE1/NC0xNTY0ODY1MTQz/LTE0OTUuanBlZw.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 44, "in_collection": 189 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 3669241,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Promo",
+      "label": "Columbia",
+      "title": "A Piece Of Americana",
+      "resource_url": "https://api.discogs.com/releases/3669241",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 1998,
+      "thumb": "https://i.discogs.com/fSvwU8ypolW3qcGNPWx3ZPkDSds2zKUjhON3QfbOf6Q/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2Njky/NDEtMTMzOTYyODk1/Ny01NTk5LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 49, "in_collection": 54 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 7808474,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Single, Promo",
+      "label": "Epic",
+      "title": "Walla Walla",
+      "resource_url": "https://api.discogs.com/releases/7808474",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 1998,
+      "thumb": "https://i.discogs.com/e5po2pk-kcrZCNtQHGfy5hN2wfa9mOj8GZO91SAtJCs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MDg0/NzQtMTQ0OTIxNzc3/NC00Njk4LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 44, "in_collection": 12 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 172782,
+      "title": "Pretty Fly (For A White Guy) / Ex-Factor",
+      "type": "master",
+      "main_release": 4934583,
+      "artist": "The Offspring / Lauryn Hill",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/172782",
+      "year": 1998,
+      "thumb": "https://i.discogs.com/uqD-wlOuL1dd25GyHFh5_QUzzeVBL0KwQvWPcWKtOB4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5MzQ1/ODMtMTM3OTg3NzA0/OC01OTU0LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 165, "in_collection": 21 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77234,
+      "title": "Americana",
+      "type": "master",
+      "main_release": 9519361,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77234",
+      "year": 1998,
+      "thumb": "https://i.discogs.com/lpS1Kr-b-V2RC-sCSLQ2LLMGEgw64_77f585No79oQ0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1MTkz/NjEtMTUwNDQ2OTU5/My05NTk0LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 233, "in_collection": 569 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77239,
+      "title": "Pretty Fly (For A White Guy)",
+      "type": "master",
+      "main_release": 476885,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77239",
+      "year": 1998,
+      "thumb": "https://i.discogs.com/YzK0gtTp0eoKbGhJQyLayCOnAtuyDlBoENKnLi7RrqE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3Njg4/NS0xNDQ5Mjc4NDM3/LTc2ODAuanBlZw.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 33, "in_collection": 724 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77241,
+      "title": "The Kids Aren't Alright",
+      "type": "master",
+      "main_release": 972869,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77241",
+      "year": 1998,
+      "thumb": "https://i.discogs.com/WUE4hOA6-BKMkEpz5gWtn0USjDVVp2Gktn0g3OEeE6c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk3Mjg2/OS0xNjEwOTY0NDYz/LTM2NDkuanBlZw.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 25, "in_collection": 119 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77242,
+      "title": "Why Don't You Get A Job?",
+      "type": "master",
+      "main_release": 1015741,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77242",
+      "year": 1998,
+      "thumb": "https://i.discogs.com/Er_HWpjiYc7R72RHdAPWI0P6T-BiSHlrG3b91L902To/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTU3/NDEtMTUyNjg5Njc0/OS04NDkxLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 22, "in_collection": 317 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 796134,
+      "title": "Americana",
+      "type": "master",
+      "main_release": 7068236,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/796134",
+      "year": 1998,
+      "thumb": "https://i.discogs.com/dJ-dD12XT400b_p8g3mz91FjAYUyOZ6qgDwSFVSmWl8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwNjgy/MzYtMTQzMjk3NDI2/OC02NjY1LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 24, "in_collection": 45 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77240,
+      "title": "She's Got Issues",
+      "type": "master",
+      "main_release": 4360868,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77240",
+      "year": 1999,
+      "thumb": "https://i.discogs.com/C2L-Bf9Glv4H28x48_U0F2sdNNDhMTAWGqhO35ygHeo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNjA4/NjgtMTM2MjgyNDMz/Ni0yNjc4LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 24, "in_collection": 30 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 1845957,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Single, Ltd, Promo",
+      "label": "Elektra",
+      "title": "Totalimmortal",
+      "resource_url": "https://api.discogs.com/releases/1845957",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 2000,
+      "thumb": "https://i.discogs.com/kx0D_nu1Zl5a9gh1_XnFOlHtf8b-raoLNXtht9MOoT0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDU5/NTctMTQyMDE1NTc0/OS02NjAzLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 43, "in_collection": 46 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 7820473,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Comp, Promo",
+      "label": "Epic",
+      "title": "Digest Sampler",
+      "resource_url": "https://api.discogs.com/releases/7820473",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 2000,
+      "thumb": "https://i.discogs.com/TqFxgatxWbVCHlOE6zJjqdn1NCMujsQVKqhz45PIbdc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MjA0/NzMtMTQ0OTQ3OTkw/Mi0zMTU5LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 20, "in_collection": 4 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 8540060,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Single, Promo",
+      "label": "Atlantic",
+      "title": "Bloodstains",
+      "resource_url": "https://api.discogs.com/releases/8540060",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 2000,
+      "thumb": "https://i.discogs.com/TKsZp1e_NlWv__3DaM-I5jeTN3edjnWLjdcCRVngwWg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1NDAw/NjAtMTQ2MzY1Nzc4/Ny03NTY3LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 58, "in_collection": 3 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 927899,
+      "title": "Huck It",
+      "type": "master",
+      "main_release": 9234635,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/927899",
+      "year": 2000,
+      "thumb": "https://i.discogs.com/ETsYGbbbpYvNi1f0PkKlL6W2ar9EFBl8URI4Q0PMCO0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyMzQ2/MzUtMTQ3NzExNDI3/OC04MDM2LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 16, "in_collection": 57 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77243,
+      "title": "Conspiracy Of One",
+      "type": "master",
+      "main_release": 606683,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77243",
+      "year": 2000,
+      "thumb": "https://i.discogs.com/HJcV235mNb4EnKBxuInJvuQgEIQy2z8qfZc65ErFy24/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwNjY4/My0xMzA2MzM0MTI0/LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 167, "in_collection": 1215 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77244,
+      "title": "Original Prankster",
+      "type": "master",
+      "main_release": 1833924,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77244",
+      "year": 2000,
+      "thumb": "https://i.discogs.com/2Vwf_RfZIq6E4U1-li0Oqs8W27qDGWO1AKrCpIRuXh4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MzM5/MjQtMTY2MjQ0ODg3/My0xODExLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 15, "in_collection": 162 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77245,
+      "title": "Want You Bad",
+      "type": "master",
+      "main_release": 1802771,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77245",
+      "year": 2000,
+      "thumb": "https://i.discogs.com/U28zHc6vcl0oyvvj5fXTqklNrnWJb4mWbhbOQTusAgc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MDI3/NzEtMTM5NjkwMDEw/My01NzQyLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 16, "in_collection": 52 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 3645095,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD-ROM, Comp, Enh, Promo",
+      "label": "Tribe Magazine",
+      "title": "The Offspring's Conspiracy",
+      "resource_url": "https://api.discogs.com/releases/3645095",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 2001,
+      "thumb": "https://i.discogs.com/W2VE1YzWV85UaK-Mi69Fzih8mox-vFssPdm4d8OYRac/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NDUw/OTUtMTMzODY2NzM5/MS0zNDU0LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 22, "in_collection": 57 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 4847698,
+      "status": "Accepted",
+      "type": "release",
+      "format": "7\"",
+      "label": "Columbia",
+      "title": "Original Prankster / Jaded",
+      "resource_url": "https://api.discogs.com/releases/4847698",
+      "role": "Main",
+      "artist": "The Offspring / Aerosmith",
+      "year": 2001,
+      "thumb": "https://i.discogs.com/z4Drve7QzQ5JUGwLQnZnccsr7QEo28eLzAY6LEsxZtI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4NDc2/OTgtMTQzMDQxMzQx/Ny0xNzUwLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 95, "in_collection": 17 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 388372,
+      "title": "Defy You",
+      "type": "master",
+      "main_release": 797375,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/388372",
+      "year": 2001,
+      "thumb": "https://i.discogs.com/CtIbVJBOoQJQi-O-g9dcS6qJqNXOOz7_TBv2mUBl4fw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5NzM3/NS0xMjc0MDk4MjM0/LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 34, "in_collection": 191 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 273816,
+      "title": "Million Miles Away",
+      "type": "master",
+      "main_release": 5699496,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/273816",
+      "year": 2001,
+      "thumb": "https://i.discogs.com/gpjEQKoj7OmTD4t6AA3LfBJRluF48eUWq9FMyS_bRoU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2OTk0/OTYtMTU1Mzk3Mzgy/Mi00NzY5LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 13, "in_collection": 25 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 7788524,
+      "status": "Accepted",
+      "type": "release",
+      "format": "DVD, Promo",
+      "label": "Columbia",
+      "title": "Da Hui",
+      "resource_url": "https://api.discogs.com/releases/7788524",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 2003,
+      "thumb": "https://i.discogs.com/bv7VwjB_rsQxHB5FiO8ZmCSl9LQSeLumvzF28rhCq90/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3ODg1/MjQtMTQ0ODc5NzU4/Ny04MjQ1LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 23, "in_collection": 16 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 8540046,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Single, Promo",
+      "label": "Columbia",
+      "title": "I Wanna Be Sedated",
+      "resource_url": "https://api.discogs.com/releases/8540046",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 2003,
+      "thumb": "https://i.discogs.com/HgsesDZUX4jd3E4pvHvIRstI9COfwkFMaIiH01YxfMY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1NDAw/NDYtMTQ2MzY1NzM3/MS02NDc2LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 46, "in_collection": 7 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 9989628,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Promo",
+      "label": "FMQB Productions",
+      "title": "Radio Special",
+      "resource_url": "https://api.discogs.com/releases/9989628",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 2003,
+      "thumb": "https://i.discogs.com/uGqHrKJxkexibL2HzLM1S3o-5sUh8HIM_trALXha1s4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5ODk2/MjgtMTQ4OTc2NDM5/Ny0yMDAzLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 18, "in_collection": 1 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 188846,
+      "title": "(Can't Get My) Head Around You",
+      "type": "master",
+      "main_release": 1898768,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/188846",
+      "year": 2003,
+      "thumb": "https://i.discogs.com/7WQtwQb-XoU0s5_lBU282z4jxIV4gQGXIlfBL-5Wo1c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4OTg3/NjgtMTI1MDk5ODkx/NC5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 25, "in_collection": 34 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77246,
+      "title": "Hit That",
+      "type": "master",
+      "main_release": 1175689,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77246",
+      "year": 2003,
+      "thumb": "https://i.discogs.com/17YiYtMmHfyFTw7gsO0D2TCtPYWtavdONYNCds2JljI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzU2/ODktMTE5ODM5MzA0/NS5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 33, "in_collection": 98 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 77248,
+      "title": "Splinter",
+      "type": "master",
+      "main_release": 382168,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/77248",
+      "year": 2003,
+      "thumb": "https://i.discogs.com/YMThwq2K1pKuE_h-EyP2I0FK7rscqdlrLXpVhvxFRnI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MjE2/OC0xMzIzMTM3NDgw/LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 94, "in_collection": 1839 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 1292606,
+      "title": "Spare Me The Details",
+      "type": "master",
+      "main_release": 1264684,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/1292606",
+      "year": 2004,
+      "thumb": "https://i.discogs.com/FFsNNz5_qg8jOY7QHrnzITsa162GQ2AIkSliLOA4nOY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjQ2/ODQtMTIwNDgwODgy/OC5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 32, "in_collection": 29 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 4344985,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Single, Promo",
+      "label": "Columbia",
+      "title": "Next To You",
+      "resource_url": "https://api.discogs.com/releases/4344985",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 2005,
+      "thumb": "https://i.discogs.com/UbMDipWWnPoU4PbaHqcQb2dmqrPMZYCbJ_NlfEbdLp8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNDQ5/ODUtMTM2MjM0NTQ0/Ny05ODA0LmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 44, "in_collection": 12 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 25154887,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Comp, Promo",
+      "label": "Sony BMG Music Entertainment",
+      "title": "Greatest Hits",
+      "resource_url": "https://api.discogs.com/releases/25154887",
+      "role": "Main",
+      "artist": "The Offspring",
+      "year": 2005,
+      "thumb": "https://i.discogs.com/lGZoOjh4Jj5obk19QMdHaf241akXAppV_JsVY7LG-Dc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MTU0/ODg3LTE2Njg1NTA5/ODgtNTY2NC5qcGVn.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 1, "in_collection": 1 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    },
+    {
+      "id": 927828,
+      "title": "Can't Repeat",
+      "type": "master",
+      "main_release": 4074557,
+      "artist": "The Offspring",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/927828",
+      "year": 2005,
+      "thumb": "https://i.discogs.com/7aHjL-9LmjavBh6nOZhvidDU7_PUjd8_PmQ6AFhYhFg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzQ1/NTctMTQ4NjE2NTMz/OS05NzQzLmpwZWc.jpeg",
+      "stats": {
+        "community": { "in_wantlist": 27, "in_collection": 53 },
+        "user": { "in_wantlist": 0, "in_collection": 0 }
+      }
+    }
+  ]
+}
