@@ -26,7 +26,17 @@ def handle_client(client_socket):
     client_connections.remove(client_socket)
     client_socket.close()
 
-# Configurar el servidor
+# Función para recibir mensajes del cliente
+def receive_messages(client_socket):
+    while True:
+        try:
+            message = client_socket.recv(1024)
+            print(message.decode('utf-8'))
+        except:
+            break
+
+
+# Configurar el servidor socket.AF_INET -> protocolo IPv4
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((HOST, PORT))
 server_socket.listen(5)
@@ -38,6 +48,8 @@ while True:
     client_socket, client_address = server_socket.accept()
     print('Conexión establecida desde:', client_address)
     client_connections.append(client_socket)
+    
+    receive_messages(client_socket)
     # Iniciar un hilo para manejar al cliente
     client_thread = threading.Thread(target=handle_client, args=(client_socket,))
     client_thread.start()
