@@ -1,0 +1,23 @@
+{
+  "banda": [
+    {
+      "title": "The Offspring",
+      "list": 1,
+      "albums": [
+        {
+          "title": "Americana",
+          "year": "1998",
+          "track_list": [
+            { "title": "Have You Ever", "time": "03:50", "number": 2 },
+            { "title": "Staring At The Sun", "time": "02:13", "number": 3 }
+          ]
+        },
+        {
+          "title": "Splinter",
+          "year": "2003",
+          "track_list": [{ "title": "Necon", "time": "3:18", "number": 1 }]
+        }
+      ]
+    }
+  ]
+}

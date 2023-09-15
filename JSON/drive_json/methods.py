@@ -35,21 +35,24 @@ def json_a_archivo(dictionary : dict, name : str):
         crear_archivo(name)
         file = escribir_archivo(name)
     with file as value:
-        json.dump(dictionary)
+        json.dump(dictionary,value)
 
-    
+def archivo_a_json(name : str):
+    try:
+        file = abrir_archivo(name)
+        dictionary = json.load(file)
+        return dictionary
+    except FileNotFoundError:
+        print("El archivo no existe")
+        return {}
 
-    # if open(name, 'r') is FileNotFoundError:
-    #     f = open(name,'w')
-    # else:
-    #     print("El archivo existe papu")
-    # return f
 
 
 if __name__=='__main__':
     # abrir_archivo('ASD.json')
     # borrar_archivo('banda.json')
     
+    """ ejemplo diccionario banda"""
     banda = {
         "banda" : [
             {
@@ -89,5 +92,9 @@ if __name__=='__main__':
 
     }
 
-
-    json_a_archivo(banda,'banda')
+    result = archivo_a_json('banda.json')
+    print(result['banda'][0]['title'])
+    
+    # json_a_archivo(banda,'banda.json')
+    
+    
