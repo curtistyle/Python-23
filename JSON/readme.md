@@ -13,6 +13,49 @@
 | `+`  | abierto para actualizar *(lectura y escritura)* |
 
 
+## Excepciones
+
+| Excepcion | Descripcion |
+| --------- | ----------- |
+| `FileNotFoundError` | Generado cuando se solicita un archivo o directorio pero no existe |
+| `FileExistsError` | Se genera al intentar crear un archivo o directorio que ya existe |
+
+
+## Paquete `os`
+
+El módulo `os` en Python proporciona una manera de utilizar funcionalidades del sistema operativo, como interactuar con el sistema de archivos, trabajar con variables de entorno, y ejecutar comandos del sistema. Aquí hay algunos de los métodos más comunes que ofrece el módulo `os`:
+
+1. **`os.getcwd()`**: Devuelve el directorio actual de trabajo como una cadena de caracteres.
+
+2. **`os.chdir(path)`**: Cambia el directorio de trabajo actual al especificado por `path`.
+
+3. **`os.listdir(path='.')`**: Devuelve una lista de los archivos y directorios en el directorio dado. Si no se proporciona un directorio, se asume el directorio actual.
+
+4. **`os.mkdir(path)`**: Crea un nuevo directorio en el sistema de archivos.
+
+5. **`os.makedirs(path)`**: Crea un directorio y los directorios intermedios necesarios. Por ejemplo, si `path` es `'a/b/c'` y `a` y `b` no existen, este método creará `a`, `b`, y `c`.
+
+6. **`os.remove(path)`**: Elimina el archivo especificado.
+
+7. **`os.rmdir(path)`**: Elimina el directorio especificado. Nota: el directorio debe estar vacío.
+
+8. **`os.removedirs(path)`**: Elimina el directorio y los directorios intermedios si están vacíos.
+
+9. **`os.rename(src, dst)`**: Cambia el nombre de un archivo o directorio de `src` a `dst`.
+
+10. **`os.path.join(path1, path2, ...) `**: Combina uno o más componentes de la ruta en una sola ruta.
+
+11. **`os.path.exists(path)`**: Devuelve `True` si el archivo o directorio en la ruta especificada existe, de lo contrario devuelve `False`.
+
+12. **`os.path.isfile(path)`**: Devuelve `True` si el camino especificado es un archivo, de lo contrario devuelve `False`.
+
+13. **`os.path.isdir(path)`**: Devuelve `True` si el camino especificado es un directorio, de lo contrario devuelve `False`.
+
+14. **`os.environ`**: Un diccionario que contiene todas las variables de entorno disponibles en el sistema.
+
+15. **`os.system(command)`**: Ejecuta el comando dado por `command` en una subshell (se pasa al shell del sistema operativo para su ejecución).
+
+Estos son solo algunos ejemplos de lo que el módulo `os` puede hacer. Es una herramienta muy útil cuando necesitas interactuar con el sistema de archivos o realizar operaciones relacionadas con el sistema operativo desde Python.
 
 ## Estruc 1
 "Estructura de datos" en programación se refiere a la forma en que organizas y almacenas datos en la memoria de una computadora para su procesamiento eficiente y acceso. Aquí tienes varias definiciones y perspectivas sobre el concepto de estructuras de datos en programación:
