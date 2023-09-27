@@ -108,3 +108,53 @@ La "estructura de datos" en programación se refiere a la forma en que los datos
 8. **Conjunto de Métodos y Estructuras para Operar Datos**: Incluye tanto las estructuras de datos como los métodos (funciones o procedimientos) que operan sobre esos datos.
 
 En resumen, una estructura de datos en programación proporciona una forma de organizar y almacenar datos para que puedan ser utilizados y manipulados de manera efectiva y eficiente en un programa de computadora. Pueden variar en complejidad y se utilizan para diferentes propósitos dependiendo de las necesidades del programa.
+
+# Estructuras de datos en python
+
+Python ofrece varias estructuras de datos incorporadas que son fundamentales para la programación. Aquí están algunas de las estructuras de datos más comunes y sus diferencias:
+
+1. **Listas (`list`)**:
+   - Colección ordenada y mutable de elementos.
+   - Los elementos pueden ser de cualquier tipo, incluso otra lista.
+   - Se pueden acceder mediante un índice.
+   - Sintaxis de creación: `mi_lista = [1, 2, 3, 'texto']`.
+
+2. **Tuplas (`tuple`)**:
+   - Colección ordenada e inmutable de elementos.
+   - Los elementos pueden ser de cualquier tipo, incluso otra tupla.
+   - Se pueden acceder mediante un índice.
+   - Sintaxis de creación: `mi_tupla = (1, 2, 3, 'texto')`.
+
+3. **Conjuntos (`set`)**:
+   - Colección no ordenada de elementos únicos e inmutables.
+   - No permite duplicados.
+   - No se pueden acceder mediante un índice.
+   - Sintaxis de creación: `mi_set = {1, 2, 3, 'texto'}`.
+
+4. **Diccionarios (`dict`)**:
+   - Colección no ordenada de pares clave-valor.
+   - Las claves deben ser únicas y pueden ser de cualquier tipo inmutable (como cadenas o números).
+   - Los valores pueden ser de cualquier tipo.
+   - Sintaxis de creación: `mi_dict = {'clave1': 'valor1', 'clave2': 'valor2'}`.
+
+5. **Cadenas (`str`)**:
+   - Secuencia inmutable de caracteres Unicode.
+   - Pueden ser accedidas por índice, pero son inmutables, lo que significa que no se pueden modificar.
+   - Sintaxis de creación: `mi_cadena = "Hola, mundo!"`.
+
+6. **Listas Anidadas**:
+   - Listas que contienen otras listas como elementos.
+   - Permiten la creación de estructuras de datos más complejas.
+   - Sintaxis de creación: `mi_lista_anidada = [[1, 2], [3, 4]]`.
+
+7. **Cadenas de Bytes (`bytes`)**:
+   - Similar a las cadenas, pero representan secuencias de bytes en lugar de caracteres Unicode.
+   - Son inmutables.
+   - Sintaxis de creación: `mis_bytes = b'Hola'`.
+
+8. **Arreglos (`array`)**:
+   - Colección de elementos del mismo tipo, similar a una lista, pero más eficiente para ciertas operaciones.
+   - Requiere importar el módulo `array`.
+   - Sintaxis de creación: `import array; mi_arreglo = array.array('i', [1, 2, 3])`.
+
+Estas son algunas de las estructuras de datos fundamentales en Python. Cada una tiene sus propias características y se elige según los requisitos específicos del problema que estés resolviendo. Por ejemplo, las listas son versátiles y utilizadas ampliamente, mientras que los conjuntos son ideales para operaciones de conjunto, y los diccionarios son eficientes para mapeos clave-valor.
