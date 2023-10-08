@@ -1,0 +1,18 @@
+{
+    "user" : null,
+    "lists" : [
+        {
+            "id" : null,
+            "name" : "Lista 1",
+            "key" : null,
+            "description" : null,
+            "tracks" : [
+                {
+                    "artist" : "The Offspring",
+                    "album" : "Smash",
+                    "Track" : "Self Eteem"
+                }
+            ]
+        }
+    ]
+}
