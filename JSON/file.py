@@ -13,7 +13,6 @@ class File():
             return open(self.__path,'r')
         except FileNotFoundError:
             file = open(self.__path,'w')
-            
             return file
 
     def add(self, **kwargs):
@@ -24,6 +23,8 @@ class File():
         
         with self.__file as file:
             json.dump(dictionary,file)
+    
+    def update(self, index,**kwargs):
         
 
 
