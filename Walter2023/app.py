@@ -16,7 +16,6 @@ from conexion import (conect_to_db,
 ## deactivate 
 
 
-
 app = Flask('Api Test')
 
 app.secretkey = 'secretkey'

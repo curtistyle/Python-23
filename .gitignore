@@ -6,3 +6,5 @@ protected/data/*.db
 themes/classic/views/
 servidor-23/
 /MYSQL/env
+
+env/
