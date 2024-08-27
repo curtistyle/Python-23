@@ -30,13 +30,13 @@ class BinaryTree:
             return root  
         self.root = __insert(self.root, node)
 
-    def indert_node(self, node, key):
-        def __insert(root, value, key):
-            if root is None:
-                return Node(node, key)
-            elif (value[key] > root.value[key]):
+    # def indert_node(self, node, key):
+    #     def __insert(root, value, key):
+    #         if root is None:
+    #             return Node(node, key)
+    #         elif (value[key] > root.value[key]):
 
-        self.root = __insert(self.root, node, key)
+    #     self.root = __insert(self.root, node, key)
         
 
     def search(self, key):
@@ -164,19 +164,19 @@ class BinaryTree:
             self.root, delete_value = __delete(self.root, value)
         return delete_value
 
-    def select(self, delegate):
+    def select(self, predicate):
         result = None
         temp = list()
-        def __select(root, delegate):
+        def __select(root, predicate):
             if root is not None:
-                if delegate(root.value) is True:
+                if predicate(root.value) is True:
                     temp.append(root.value)
-                __select(root.left, delegate)
-                __select(root.right, delegate)
+                __select(root.left, predicate)
+                __select(root.right, predicate)
             return temp
             
         if self.root is not None:
-            result = __select(self.root, delegate)
+            result = __select(self.root, predicate)
         return result
             
 
