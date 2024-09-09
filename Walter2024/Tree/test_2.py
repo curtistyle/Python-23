@@ -1,4 +1,6 @@
-import os
+from Binary_Tree.cola import Queue
+
+
 
 class BinaryTree:
 
@@ -207,27 +209,40 @@ class BinaryTree:
                 self.root, delete_value = __delete(self.root, value)
         return delete_value
 
-    def by_level(self):
+    def by_level(self, key=None):
+        def Contador(msg, inc=[0]):
+            inc[0] = inc[0] + 1
+            print(msg, inc[0])
         pendientes = Queue()
         if self.root is not None:
             pendientes.arrive(self.root)
-
         while pendientes.size() > 0:
+            if pendientes.size() == 1: Contador(msg="Nivel ")
             node = pendientes.attention()
-            print(node.value)
+            if key is not None:
+                print(node.value[key])
+            else:
+                print(node.value)
+            # * si el hijo izquierdo no esta vacio
             if node.left is not None:
                 pendientes.arrive(node.left)
+            # * si el hijo derecho no esta vacio
             if node.right is not None:
                 pendientes.arrive(node.right)
-
+            
 
 people = [
-    {'name':'Agustin', 'age': 22, 'country': 'Gualeguaychu'},
-    {'name':'Waldo', 'age': 32, 'country': 'Federacion'},
-    {'name':'Cristian', 'age': 12, 'country': 'Rosaria'},
     {'name':'Santiago', 'age': 33, 'country': 'Aldea San Antonio'},
     {'name':'Pedro', 'age': 42, 'country': 'Aldea San Juan'},
-    
+    {'name':'Marcos', 'age': 43, 'country': 'Concepcion del Uruguay'},
+    {'name':'Cristian', 'age': 12, 'country': 'Rosario'},
+    {'name':'Waldo', 'age': 32, 'country': 'Federacion'},
+    {'name':'Agustin', 'age': 22, 'country': 'Gualeguaychu'},
+    {'name':'Luis', 'age': 31, 'country': 'Gualeguaychu'},
+    {'name':'Franco', 'age': 12, 'country': 'Parana'},
+    {'name':'Walter', 'age': 40, 'country': 'Rosario'},
+    {'name':'Maria', 'age': 17, 'country': 'Aldea San Juan'},
+    {'name':'Soledad', 'age': 21, 'country': 'Concepcion del Uruguay'},
 ]
 
 
@@ -244,7 +259,7 @@ tree.inorden(key='name')
 print(f"\nPOSORDEN: ")
 tree.postorden(key='name')
 
-eliminar = "Santiago"
+eliminar = "Franco"
 
 print(f"Buscar {eliminar}: ", tree.search(eliminar, 'name').value)
 
@@ -252,6 +267,9 @@ tree.delete_node(eliminar, key='name')
 
 print(f"\n Se Elimino \'{eliminar}\' IRORDEN: ")
 tree.inorden(key='name')
+
+print(f"\n Barrido por nivel: ")
+tree.by_level(key="name")
 
 # tree.insert_node(19)
 # tree.insert_node(7)
