@@ -6,6 +6,7 @@ class Node:
         self.left = left
         self.right = right
         self.key = key
+        self.height = 0
 
 class BinaryTree:
     def __init__(self):
@@ -73,28 +74,31 @@ class BinaryTree:
         return root
     
     def insert_node(self, value, key=None):
-            def __insert_by_key(root, value, key):
-                if root is None:
-                    return BinaryTree.__Node(value, key=key)
-                elif value[key] < root.value[key]:
-                    root.left = __insert_by_key(root.left, value, key)
-                else:
-                    root.right = __insert_by_key(root.right, value, key)
-                return root
-
-            def __insert(root, value):
-                if root is None:
-                    return BinaryTree.__Node(value)
-                elif value < root.value:
-                    root.left = __insert(root.left, value)
-                else:
-                    root.right = __insert(root.right, value)
-                return root
-
-            if key is not None:
-                self.root = __insert_by_key(self.root, value, key)
+        def __insert_by_key(root, value, key):
+            if root is None:
+                return Node(value, key=key)
+            elif value[key] < root.value[key]:
+                root.left = __insert_by_key(root.left, value, key)
             else:
-                self.root = __insert(self.root, value)
+                root.right = __insert_by_key(root.right, value, key)
+                
+            root = self.balancing(root)
+            self.update_height(root)
+            return root
+
+        def __insert(root, value):
+            if root is None:
+                return Node(value)
+            elif value < root.value:
+                root.left = __insert(root.left, value)
+            else:
+                root.right = __insert(root.right, value)
+            return root
+
+        if key is not None:
+            self.root = __insert_by_key(self.root, value, key)
+        else:
+            self.root = __insert(self.root, value)
                 
     def search(self, value, key=None):
         # ! search by key
@@ -212,3 +216,131 @@ class BinaryTree:
                 pendientes.arrive(node.left)
             if node.right is not None:
                 pendientes.arrive(node.right)    
+                
+    def inorden(self, key=None):
+        def __inorden(root):
+            if root is not None:
+                __inorden(root.left)
+                print(root.value)
+                __inorden(root.right)
+
+        def __inorden_by_key(root, key):
+            if root is not None:
+                __inorden_by_key(root.left, key)
+                print(root.value[key])
+                __inorden_by_key(root.right, key)
+
+        if self.root is not None:
+            if key is not None:
+                __inorden_by_key(self.root, key)
+            else:
+                __inorden(self.root)
+                
+    def select(self, function, sweep="inorden"):
+        
+        # ! PRE-ORDEN
+        def __select_preorden(root, fn):
+            if root is not None:
+                res = fn(root.value)
+                if res is not None:
+                    root.value = res
+                __select_preorden(root.right, fn)
+                __select_preorden(root.left, fn)
+            return root
+        
+        # ! POS-ORDEN
+        def __select_posorden(root, fn):
+            if root is not None:
+                __select_posorden(root.right, fn)
+                res = fn(root.value)
+                if res is not None:
+                    root.value = res
+                __select_posorden(root.left, fn)
+            return root
+        
+        # ! IN-ORDEN
+        def __select_inorden(root, fn):
+            if root is not None:
+                __select_inorden(root.left, fn)
+                res = fn(root.value)
+                if res is not None:
+                    root.value = res
+                __select_inorden(root.right, fn)
+            return root
+        
+        if self.root is not None:
+            if sweep.lower() == "inorden":
+                self.root = __select_inorden(self.root, function)
+            elif (sweep.lower() == "posorden"):
+                self.root = __select_posorden(self.root, function)
+            elif (sweep.lower() == "preorden"):
+                self.root = __select_preorden(self.root, function)
+            else:
+                raise ValueError(f"Nombre de barrido {sweep} incorrecto")
+
+    def update_any(self, seek, key, patche:dict):
+        """Actualiza un Nodo de tipo `dict()`"""
+        def __update_any(root, seek, key, patche):
+            if root is not None:
+                if (seek == root.value[key]):
+                    root.value.update(patche)
+                __update_any(root.left, seek, key, patche)        
+                __update_any(root.right, seek, key, patche)        
+            return root
+        
+        if self.root.key in list(patche.keys()):
+            raise ValueError("No se puede modificar la clave principal")
+        if self.root is not None:
+            self.root = __update_any(self.root, seek, key, patche)
+    
+    def group_and_count(self, key):
+        count = {}
+        def __group_and_count(root, key):
+            if root is not None:
+                value = root.value[key]
+                if value is not None:
+                    if count.get(value) == None:
+                        count[value] = 1
+                    else:
+                        count[value] = count[value] + 1
+
+                __group_and_count(root.left, key)
+                __group_and_count(root.right, key)
+        
+        if self.root is not None:
+            __group_and_count(self.root, key)
+        
+        def _item(value):
+            return value[1]
+        in_orden = dict(sorted(count.items(), key=_item, reverse=True))
+        
+        return in_orden
+            
+    def where(self, predicate) -> list:
+        result = None
+        temp = list()
+        def __where(root, predicate):
+            if root is not None:
+                if predicate(root.value) == True:
+                    temp.append(root.value)
+                __where(root.left, predicate)
+                __where(root.right, predicate)
+            return temp
+            
+        if self.root is not None:
+            result = __where(self.root, predicate)
+        return result
+    
+    def nearby_search(self, value, key) -> list:
+        items=[]
+        def __nearby_search(root, value, key):
+            if root is not None:
+                if str.lower(root.value[key]).startswith(value.lower()):
+                    items.append(root.value)
+                __nearby_search(root.left, value, key )
+                __nearby_search(root.right, value, key)
+            return items
+        
+        if self.root is not None:
+            return __nearby_search(self.root, value, key)
+        return items

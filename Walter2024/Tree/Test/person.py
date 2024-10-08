@@ -26,3 +26,10 @@ class Person:
     def __repr__(self) -> str:
         return f"Person({self.name}, {self.lastname}, {self.age}, {self.country})"
         
+if __name__=="__main__":
+    
+    texto = "Welcome"
+    
+    print(f"{texto:_>10}")
+    print(f"{texto:_<10}")
+    print(f"{texto:_^10}")
