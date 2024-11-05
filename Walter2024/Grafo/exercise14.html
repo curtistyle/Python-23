@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #222831;
+    }
+    h1{
+        color: azure;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h3{
+        color: azure;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    table {
+        color: azure;
+        border: 1px solid rgb(143, 137, 137);
+        border-spacing: 0;
+        
+      }
+      :is(td) {
+        border: 1px solid rgb(143, 137, 137);
+        border-block-width: 1px 0;
+        border-inline-width: 1px 0;
+        &:last-of-type { border-inline-end-width: 1px }
+      }
+      :is(th) {
+        border: 1px solid rgb(143, 137, 137);
+        background-color: #3f4752;
+      }
+      
+
+
+    br{
+        background-color: aliceblue;
+    }
+    p{
+        color: coral;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    ul{
+        color: rgb(226, 221, 221);
+    }
+
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .div1 { grid-area: 2 / 2 / 6 / 5; }
+        .div2 { grid-area: 1 / 2 / 2 / 5; }
+</style>
+<body>
+    <div class="parent">
+        <!-- Cabecera -->
+        <div class="div2"> 
+            <h1>Ejercicio 14</h1>
+            <hr>
+        </div>
+        <!-- Contenido -->
+        <div class="div1"> 
+            <p>
+                <b>Implementar sobre un grafo no dirigido los algoritmos necesarios para dar solución a las siguientes tareas.</b>
+            </p>
+            <ul>
+                <li><i>Cada vertice representa un ambiente de una casa: <b>Cocina, Comedor, Cochera, Quincho, Baño 1, Baño 2, Habitación 1, Habitación 2, Sala de Estar, Terraza, Patio</b></i></li>
+                <li><i>Cargar al menos tres aristas a cada vertice, y a dos de estas cárguele cinco, el peso de la arista es la distancia entre los ambientes, se debe cargar en metros</i></li>
+                <li><i>Obetener el árbol de expasión minima y determine cuantos metros de cable se necesita para conectar todos los ambientes.</i></li>
+                <li><i>Determinar cual es el camino mas corto desde la habitacion 1 hasta la sala de estar para determinar cuantos metros de cable de red se nesecitan para conectar el router con el Smart Tv</i></li>
+            </ul>
+            <h3>Grafo</h3>
+            <hr>
+            <img src="graph_home.svg" width="60%">
+            <h3>Vertices y aristas</h3>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Vertices </th>
+                        <th>Aristas + Peso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sala de estar</td>
+                        <td>[("Baño 1", 3), ("Comedor", 1), ("Cochera, 4")]</td>
+                    </tr>
+                    <tr>
+                        <td>Cochera</td>
+                        <td>[("Patio", 1), ("Comedor", 2), ("Sala de Estar", 4), ("Quincho", 3), ("Cocina", 5)]</td>
+                    </tr>
+                    <tr>
+                        <td>Comedor</td>
+                        <td>[("Sala de Estar", 1), ("Cochera", 2), ("Cocina, 1"), ("Terraza", 10), ("Habitacion 2", 5), ("habitacion 1", 2), ("Baño 1", 3)]</td>
+                    </tr>
+                    <tr>
+                        <td>Patio</td>
+                        <td>[("Cochera", 1), ("Quincho", 1), ("Cocina", 3)]</td>
+                    </tr>
+                    <tr>
+                        <td>Quincho</td>
+                        <td>[("Cocina", 5), ("Patio", 1), ("Cochera", 3)]</td>
+                    </tr>
+                    <tr>
+                        <td>Cocina</td>
+                        <td>[("Quincho", 5), ("Patio", 3), ("Cochera", 5), ("Comedor", 1)]</td>
+                    </tr>
+                    <tr>
+                        <td>Baño 1</td>
+                        <td>[("Sala de Estar", 3), ("Comedor", 3), ("Habitacion 2", 7), ("Habitacion 1", 1)]</td>
+                    </tr>
+                    <tr>
+                        <td>Habitacion_1</td>
+                        <td>[("Baño 1", 1), ("Comedor", 2), ("Habitacion 2", 5), ("Baño 2", 10)]</td>
+                    </tr>
+                    <tr>
+                        <td>Habitacion_2</td>
+                        <td>[("Comedor", 5), ("Baño 1", 7), ("Habitacion 1", 5), ("Baño 2", 1), ("Terraza", 2)]</td>
+                    </tr>
+                    <tr>
+                        <td>Baño 2</td>
+                        <td>[("Terraza", 4), ("Habitacion 2", 1), ("Habitacion 1", 10)]</td>
+                    </tr>
+                    <tr>
+                        <td>Terraza</td>
+                        <td>[("Baño 2", 4), ("Habitacion 2", 2), ("Comedor", 10)]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+    const tabla = document.querySelector("table");
+    const filas = tabla.querySelectorAll("tr")
+
+    filas.forEach( fila =>{
+        const celdas = fila.querySelectorAll("td");
+        celdas.forEach( celda => {
+            
+        } );
+    } );
+</script>
+</html>
