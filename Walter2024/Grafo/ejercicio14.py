@@ -119,6 +119,8 @@ for vertice in grafo_ambientes.elements:
 # con el peso total minimo de sus aristas.
 arbol_expansion = grafo_ambientes.kruskal("Cocina")
 
+
+
 print("\n")
 
 print(f"|{color.GREEN}{"origen":^15}{color.END}|{color.RED}{"Destino":^15}{color.END}|{color.CYAN}{"Peso":^8}{color.END}|")

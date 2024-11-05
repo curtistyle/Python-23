@@ -29,9 +29,18 @@ class Graph:
                 if element['value'] == value:
                     return pos_origen, index
 
-    def insert_vertice(self, value):
+    # def insert_vertice(self, value):
+    #     nodo = {
+    #     'value': value,
+    #     'aristas': [],
+    #     'visitado': False,
+    #     }
+    #     self.elements.append(nodo)
+
+    def insert_vertice(self, value, other_value=None):
         nodo = {
         'value': value,
+        'other_value': other_value,
         'aristas': [],
         'visitado': False,
         }
@@ -157,7 +166,8 @@ class Graph:
     def kruskal(self, origen):
         def buscar_en_bosque(bosque, buscado):
             for index, arbol in enumerate(bosque):
-                # print(buscado, arbol)
+                #print(f"{buscado=}, {arbol=}")
+                #input()
                 if buscado in arbol:
                     return index
 
@@ -188,11 +198,19 @@ class Graph:
                         vertice_ori = bosque.pop(origen)
 
                     if '-' not in vertice_ori and '-' not in vertice_des:
+                        #print(f'{vertice_ori}-{vertice_des}-{arista[0]}')
+                        #input("A")
                         bosque.append(f'{vertice_ori}-{vertice_des}-{arista[0]}')
                     elif '-' not in vertice_des:
+                        #print(vertice_ori+';'+f'{arista[1][0]}-{vertice_des}-{arista[0]}')
+                        #input("B")
                         bosque.append(vertice_ori+';'+f'{arista[1][0]}-{vertice_des}-{arista[0]}')
                     elif '-' not in vertice_ori:
+                        #print(vertice_des+';'+f'{vertice_ori}-{arista[1][1]}-{arista[0]}')
+                        #input("C")
                         bosque.append(vertice_des+';'+f'{vertice_ori}-{arista[1][1]}-{arista[0]}')
                     else:
+                        #print(vertice_ori+';'+vertice_des+';'+f'{arista[1][0]}-{arista[1][1]}-{arista[0]}')
+                        #input("D")
                         bosque.append(vertice_ori+';'+vertice_des+';'+f'{arista[1][0]}-{arista[1][1]}-{arista[0]}')
         return bosque
