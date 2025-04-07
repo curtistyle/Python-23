@@ -144,8 +144,10 @@ class BinaryTree:
                     return __search(root.right, seek)
         if self.root is not None:
             old_node = __search(self.root, seek)
+        # * primero la borra
         self.delete_node(old_node[self.root.key], self.root.key)
         
+        # * luego la reinserta
         old_node[key_for_new_value] = new_value
         self.insert_node(old_node, self.root.key)  
 
@@ -269,6 +271,7 @@ class BinaryTree:
                 pendientes.arrive(node.right)
 
     def where(self, predicate) -> list:
+        """Proyecta cada elemento del arbol, mediante un selector `predicate`, lo guarda en una lista y lo retorna"""
         result = None
         temp = list()
         def __where(root, predicate):
@@ -283,8 +286,8 @@ class BinaryTree:
             result = __where(self.root, predicate)
         return result
 
-    def select(self, function, sweep="inorden"):
-        
+    def select(self, predicate, sweep="inorden"):
+        """Proyecta cada elemento del arbol, mediante un selector `predicate`, y lo muestra"""
         # ! PRE-ORDEN
         def __select_preorden(root, fn):
             if root is not None:
@@ -317,11 +320,11 @@ class BinaryTree:
         
         if self.root is not None:
             if sweep.lower() == "inorden":
-                self.root = __select_inorden(self.root, function)
+                self.root = __select_inorden(self.root, predicate)
             elif (sweep.lower() == "posorden"):
-                self.root = __select_posorden(self.root, function)
+                self.root = __select_posorden(self.root, predicate)
             elif (sweep.lower() == "preorden"):
-                self.root = __select_preorden(self.root, function)
+                self.root = __select_preorden(self.root, predicate)
             else:
                 raise ValueError(f"Nombre de barrido {sweep} incorrecto")          
     
